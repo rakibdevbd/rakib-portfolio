@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study | Luxury Bags Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    .case-header {
+      padding: 150px 8% 60px;
+      text-align: center;
+      background: var(--surface-color);
+    }
+
+    .gallery {
+      padding: 50px 8%;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      gap: 40px;
+    }
+
+    .gallery-item {
+      background: var(--surf);
+      padding: 25px;
+      border-radius: 15px;
+      border: 1px solid var(--brd);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      margin-bottom: 25px;
+    }
+
+    .code-block {
+      background: #1a1a1a;
+      color: #50fa7b;
+      padding: 25px;
+      border-radius: 10px;
+      font-family: monospace;
+      overflow-x: auto;
+      border-left: 4px solid var(--prim);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><a href="../../index.html"
+        style="text-decoration:none; color:inherit;">AR<span>.</span>Developer</a></div>
+    <a href="../../index.html" class="btn-small"><i class="fas fa-arrow-left"></i> Back to Main Portfolio</a>
+  </nav>
+
+  <header class="case-header">
+    <span class="badge">Shopify Case Study</span>
+    <h1 style="font-size: 2.5rem; margin-top: 15px;">Vintage Luxury Bags Store</h1>
+    <p style="color: var(--txt-sec);">Premium Theme Customization & bespoke Liquid sections.</p>
+  </header>
+
+  <section class="gallery">
+    <div class="gallery-item">
+      <h3>01. Hero & Branding</h3>
+      <p style="margin-bottom: 15px; color: var(--txt-sec);">Bespoke hero section with elegant typography.</p>
+      <img src="images/hero-section.png" alt="Hero">
+    </div>
+
+    <div class="gallery-item">
+      <h3>02. Collection Showcase</h3>
+      <p style="margin-bottom: 15px; color: var(--txt-sec);">Optimized mobile-responsive collection grid.</p>
+      <img src="images/collection-section.png" alt="Collection">
+    </div>
+
+    <div class="gallery-item">
+      <h3>03. Custom Liquid Snipet</h3>
+      <div class="code-block">
+        <pre>
+{% if product.tags contains 'vintage' %}
+  &lt;div class="badge"&gt;Authentic Vintage&lt;/div&gt;
+{% endif %}
+</pre>
+      </div>
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding: 50px;">
+    <p>&copy; 2026 Abdullah Al Rakib</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({duration: 1000});</script>
+</body>
+
+</html>
