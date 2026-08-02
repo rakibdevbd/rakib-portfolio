@@ -1,9 +1,11 @@
+/* --- Dynamic Variables --- */
 :root[data-theme="dark"] {
   --bg: #0b0f19;
   --surf: #161b2a;
   --txt: #f1f5f9;
   --txt-sec: #94a3b8;
   --prim: #008060;
+  /* Shopify Green */
   --brd: rgba(255, 255, 255, 0.1);
 }
 
@@ -16,11 +18,16 @@
   --brd: rgba(0, 0, 0, 0.1);
 }
 
+/* --- Global Styles --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,7 +37,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Navbar */
+/* --- Navbar --- */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -65,10 +72,17 @@ body {
   color: var(--txt);
   font-weight: 500;
   font-size: 0.95rem;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
   color: var(--prim);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 #theme-toggle {
@@ -79,7 +93,7 @@ body {
   cursor: pointer;
 }
 
-/* Hero */
+/* --- Hero Section --- */
 .hero {
   height: 100vh;
   display: flex;
@@ -137,7 +151,7 @@ body {
   display: block;
 }
 
-/* Buttons */
+/* --- Buttons --- */
 .btn {
   padding: 12px 30px;
   border-radius: 8px;
@@ -171,7 +185,7 @@ body {
   margin-top: 30px;
 }
 
-/* Content */
+/* --- Content Settings --- */
 section {
   padding: 100px 8%;
 }
@@ -186,6 +200,7 @@ section {
   color: var(--prim);
 }
 
+/* --- About Stats --- */
 .stats {
   display: flex;
   gap: 20px;
@@ -215,7 +230,44 @@ section {
   border: 1px solid var(--brd);
 }
 
-/* Grid */
+/* --- Services Grid (নতুন যুক্ত করা হয়েছে) --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: var(--surf);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid var(--brd);
+  text-align: center;
+  transition: 0.4s;
+}
+
+.service-card i {
+  font-size: 2.5rem;
+  color: var(--prim);
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  color: var(--txt-sec);
+}
+
+.service-card:hover {
+  border-color: var(--prim);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Portfolio Grid --- */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -258,7 +310,7 @@ section {
   font-size: 0.9rem;
 }
 
-/* Contact */
+/* --- Contact Section --- */
 .contact-container {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -302,7 +354,7 @@ section {
   outline: none;
 }
 
-/* Footer */
+/* --- Footer --- */
 footer {
   padding: 40px;
   text-align: center;
@@ -311,7 +363,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Mobile */
+/* --- Mobile Responsiveness --- */
 @media (max-width: 992px) {
 
   .hero-container,
