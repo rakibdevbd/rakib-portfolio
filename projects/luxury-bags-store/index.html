@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Strictly prevents zooming and shaking for 320px to 425px screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Case Study | Luxury Bags Store</title>
 
   <!-- Favicon -->
@@ -11,7 +12,8 @@
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
 
   <!-- Premium Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -27,7 +29,7 @@
       --surf-card: #121620;
       --brd: rgba(255, 255, 255, 0.08);
       --prim: #10b981;
-      /* Emerald Green matching main site */
+      /* Emerald Green */
       --txt-sec: #94a3b8;
     }
 
@@ -36,6 +38,19 @@
       overflow-x: hidden;
       width: 100%;
       background: #05070a;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Navbar Alignment Fix */
+    .nav-actions .btn-back {
+      color: #10b981 !important;
+      /* Visible Emerald in Dark Mode */
+      font-weight: 800 !important;
+      text-decoration: none;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .case-header {
@@ -50,6 +65,7 @@
       font-weight: 800;
       margin: 15px 0;
       line-height: 1.1;
+      font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
     .gallery {
@@ -81,6 +97,7 @@
       margin-bottom: 15px;
       font-size: 1.8rem;
       font-weight: 700;
+      font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
     .gallery-item img {
@@ -108,7 +125,7 @@
       word-wrap: break-word;
     }
 
-    /* Mobile Responsive Adjustments */
+    /* --- Mobile Responsive Fixes (320px - 768px) --- */
     @media (max-width: 768px) {
       .case-header {
         padding: 140px 5% 50px;
@@ -116,6 +133,7 @@
 
       .case-header h1 {
         font-size: 2.2rem !important;
+        line-height: 1.2;
       }
 
       .gallery {
@@ -131,14 +149,37 @@
         border-radius: 20px;
       }
 
+      .gallery-item h3 {
+        font-size: 1.4rem;
+      }
+
       .code-block {
         padding: 20px;
         font-size: 0.85rem;
       }
 
-      .nav-actions .btn {
-        padding: 8px 15px;
-        font-size: 0.8rem;
+      .nav-actions .btn-back {
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 320px) {
+
+      .container,
+      .gallery-wrapper {
+        padding: 0 15px !important;
+      }
+
+      .case-header h1 {
+        font-size: 1.8rem !important;
+      }
+
+      .gallery-item {
+        padding: 20px 15px;
+      }
+
+      .nav-wrapper .logo {
+        font-size: 1.2rem;
       }
     }
   </style>
@@ -148,11 +189,12 @@
 
   <!-- Navbar -->
   <nav class="navbar" data-aos="fade-down">
-    <div class="nav-container">
-      <div class="logo">AR<span>.</span>Dev</div>
+    <div class="nav-container nav-wrapper">
+      <!-- Logo clickable back to index.html -->
+      <a href="../../index.html" class="logo">AR<span>.</span>Dev</a>
       <div class="nav-actions">
-        <a href="../../index.html" class="btn btn-secondary">
-          <i class="fas fa-arrow-left"></i> Back to Home
+        <a href="../../index.html" class="btn-back">
+          <i class="fas fa-arrow-left"></i> <span>Back to Home</span>
         </a>
       </div>
     </div>
