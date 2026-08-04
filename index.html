@@ -6,204 +6,185 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdullah Al Rakib | Professional Shopify Developer</title>
 
-  <!-- Favicon (Rocket Icon) -->
+  <!-- Favicon -->
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
 
-  <!-- SEO Meta Tags -->
-  <meta name="description"
-    content="Professional Shopify Developer specializing in custom liquid coding and premium theme customization.">
-
-  <!-- Google Fonts & FontAwesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Premium Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Animate On Scroll (AOS) -->
+  <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- Background Glows -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">AR<span>.</span>Developer</div>
-    <ul class="nav-links" id="nav-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <button id="theme-toggle" title="Toggle Mode"><i class="fas fa-moon"></i></button>
-      <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+  <nav class="navbar" data-aos="fade-down">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">AR<span>.</span>Dev</a>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="hero-container">
-      <div class="hero-text" data-aos="fade-right">
-        <span class="badge">Open for Shopify Projects</span>
-        <h1>Abdullah Al Rakib</h1>
-        <h2>Premium <span>Shopify Developer</span></h2>
-        <p>Scaling brands through custom Liquid code, expert theme customization, and conversion-optimized store
-          designs.</p>
+    <div class="container hero-grid">
+      <div class="hero-text" data-aos="fade-right" data-aos-duration="1200">
+        <div class="status-badge"><span></span> Available for new projects</div>
+        <h1>Elevating Brands on <br><span class="gradient-text">Shopify Ecosystem</span></h1>
+        <p>I build conversion-optimized stores using custom Liquid code and premium design principles.</p>
         <div class="hero-btns">
-          <a href="https://www.fiverr.com/rakibdevbd" target="_blank" class="btn btn-primary">Hire on Fiverr <i
-              class="fas fa-external-link-alt"></i></a>
-          <a href="assets/resume.pdf" target="_blank" class="btn btn-outline">Download CV <i
+          <a href="https://www.fiverr.com/rakibdevbd" target="_blank" class="btn btn-primary">Start a Project</a>
+          <a href="assets/resume.pdf" target="_blank" class="btn btn-outline">My Resume <i
               class="fas fa-download"></i></a>
         </div>
       </div>
-      <div class="hero-image" data-aos="zoom-in">
-        <div class="img-container">
-          <img src="assets/profile.png" alt="Abdullah Al Rakib">
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="section-title" data-aos="fade-up">
-      <h2>About <span>Me</span></h2>
-    </div>
-    <div class="about-container">
-      <div class="about-text" data-aos="fade-right">
-        <h3>Transforming Concepts into High-Converting Shopify Stores</h3>
-        <p>I am a dedicated Shopify Developer with a focus on UI/UX and clean code. I specialize in the Shopify
-          ecosystem, helping businesses create bespoke e-commerce experiences using the power of Liquid coding.</p>
-        <div class="stats">
-          <div class="stat-box">
+      <div class="hero-img-container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="image-box">
+          <img src="assets/profile.png" alt="Rakib Profile">
+          <div class="experience-tag">
             <h3>5+</h3>
-            <p>Years Experience</p>
+            <p>Years of <br>Excellence</p>
           </div>
-          <div class="stat-box">
-            <h3>50+</h3>
-            <p>Successful Stores</p>
-          </div>
-        </div>
-      </div>
-      <div class="skills-box" data-aos="fade-left">
-        <div class="skill-tags">
-          <span>Shopify</span> <span>Liquid Logic</span> <span>HTML5 / CSS3</span> <span>JavaScript</span> <span>UI/UX
-            Optimization</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NEW: Services Section (যোগ করা হয়েছে) -->
+  <!-- Bento About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-label" data-aos="fade-up">About Me</div>
+      <div class="bento-grid">
+        <div class="bento-card bio" data-aos="fade-up">
+          <h3>Beyond Template Customization</h3>
+          <p>I specialize in <strong>Shopify Liquid</strong>, creating bespoke functionalities that themes can't offer.
+            I've helped 50+ brands transition into high-performing e-commerce stores.</p>
+        </div>
+
+        <div class="bento-card skills" data-aos="fade-up" data-aos-delay="200">
+          <h4>My Tech Stack</h4>
+          <div class="skill-pills">
+            <span>Shopify</span><span>Liquid</span><span>JS</span><span>CSS3</span><span>SEO</span>
+          </div>
+        </div>
+
+        <div class="bento-card stores" data-aos="fade-up" data-aos-delay="400">
+          <h3>50+</h3>
+          <p>Live Stores Built</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
   <section id="services" class="services">
-    <div class="section-title" data-aos="fade-up">
-      <h2>My <span>Services</span></h2>
-    </div>
-    <div class="services-grid">
-      <div class="service-card" data-aos="fade-up">
-        <i class="fas fa-store"></i>
-        <h3>Store Setup & Design</h3>
-        <p>Professional Shopify store design from scratch, optimized for brand identity and high sales conversions.</p>
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>My <span>Specialties</span></h2>
       </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-        <i class="fas fa-code"></i>
-        <h3>Custom Liquid Development</h3>
-        <p>Developing unique custom sections and dynamic features tailored specifically for your theme requirements.</p>
-      </div>
-      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-        <i class="fas fa-bolt"></i>
-        <h3>Speed & Performance</h3>
-        <p>Optimizing Shopify store loading speed and performance scores to provide a seamless user experience.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="projects" class="portfolio">
-    <div class="section-title" data-aos="fade-up">
-      <h2>Featured <span>Portfolio</span></h2>
-    </div>
-    <div class="project-grid">
-      <div class="project-card" data-aos="fade-up">
-        <div class="project-img">
-          <img src="projects/luxury-bags-store/images/main-screenshot.png" alt="Luxury Bags Store">
+      <div class="services-grid">
+        <div class="s-card" data-aos="flip-left" data-aos-delay="100">
+          <i class="fas fa-magic"></i>
+          <h3>Liquid Coding</h3>
+          <p>Custom sections and unique store features.</p>
         </div>
-        <div class="project-info">
-          <h3>Vintage Luxury Bags Store</h3>
-          <p>High-end premium Shopify theme customization with bespoke Liquid sections.</p>
-          <a href="projects/luxury-bags-store/index.html" class="btn-small">Explore Case Study <i
-              class="fas fa-long-arrow-alt-right"></i></a>
+        <div class="s-card" data-aos="flip-left" data-aos-delay="300">
+          <i class="fas fa-bolt"></i>
+          <h3>Optimization</h3>
+          <p>Fast-loading themes for better conversions.</p>
+        </div>
+        <div class="s-card" data-aos="flip-left" data-aos-delay="500">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Design</h3>
+          <p>Professional Shopify UI/UX implementation.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Selected <span>Work</span></h2>
+      </div>
+      <div class="project-banner" data-aos="zoom-in-up">
+        <div class="p-img"><img src="projects/luxury-bags-store/images/hero-section.png" alt="Project"></div>
+        <div class="p-info">
+          <span class="p-badge">Shopify Case Study</span>
+          <h3>Luxury Bags Store</h3>
+          <p>Bespoke sections and advanced product filtering.</p>
+          <a href="projects/luxury-bags-store/index.html" class="p-link">View Project <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section id="contact" class="contact">
-    <div class="section-title" data-aos="fade-up">
-      <h2>Let's <span>Talk</span></h2>
-    </div>
-    <div class="contact-container" data-aos="zoom-in">
-      <div class="contact-info">
-        <h3>Contact Information</h3>
-        <p><i class="fas fa-envelope"></i> abdullahalrakib.fbd@gmail.com</p>
-        <div class="social-icons">
-          <a href="https://github.com/abdullahalrakib-fbd" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/abdullah-al-rakib-fbd/" target="_blank"><i
-              class="fab fa-linkedin"></i></a>
+    <div class="container">
+      <div class="contact-card" data-aos="zoom-in">
+        <div class="contact-text">
+          <h2>Ready to <br><span>Level Up?</span></h2>
+          <p>Let's discuss your next big Shopify project.</p>
+          <div class="socials">
+            <a href="https://github.com/abdullahalrakib-fbd"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abdullah-al-rakib-fbd/"><i class="fab fa-linkedin"></i></a>
+          </div>
         </div>
+        <form class="contact-form" action="https://formspree.io/f/xlgqyvkz" method="POST">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Message..." rows="4" required></textarea>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
       </div>
-
-      <!-- Updated Form with Formspree Endpoint -->
-      <form class="contact-form" action="https://formspree.io/f/xlgqyvkz" method="POST">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-        <textarea name="message" placeholder="Tell me about your project..." rows="4" required></textarea>
-
-        <input type="hidden" name="_subject" value="New Inquiry from Shopify Portfolio">
-
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 Abdullah Al Rakib. Built for Growth.</p>
+    <p>&copy; 2026 Abdullah Al Rakib. Built for Results.</p>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1000, once: false }); // Once false korlam jate scroll up/down korle animation abar hoy
 
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
-    hamburger.addEventListener('click', () => navMenu.classList.toggle('active'));
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
 
     const themeToggle = document.getElementById('theme-toggle');
     const root = document.documentElement;
     themeToggle.addEventListener('click', () => {
       const isDark = root.getAttribute('data-theme') === 'dark';
       root.setAttribute('data-theme', isDark ? 'light' : 'dark');
-      themeToggle.querySelector('i').classList.toggle('fa-moon');
-      themeToggle.querySelector('i').classList.toggle('fa-sun');
-    });
-
-    // Smooth Scroll Fix
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
-          // মোবাইলে মেনু বন্ধ করার জন্য
-          if (navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
-          }
-        }
-      });
+      themeToggle.querySelector('i').className = isDark ? 'fas fa-sun' : 'fas fa-moon';
     });
   </script>
 </body>

@@ -5,95 +5,224 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Case Study | Luxury Bags Store</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+
+  <!-- Premium Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Link to Main Style -->
   <link rel="stylesheet" href="../../style.css">
+
   <style>
+    :root {
+      --surface-color: #0d111a;
+      --surf-card: #121620;
+      --brd: rgba(255, 255, 255, 0.08);
+      --prim: #10b981;
+      /* Emerald Green matching main site */
+      --txt-sec: #94a3b8;
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      background: #05070a;
+    }
+
     .case-header {
-      padding: 150px 8% 60px;
+      padding: 180px 0 80px;
       text-align: center;
-      background: var(--surface-color);
+      background: radial-gradient(circle at top, rgba(16, 185, 129, 0.1), transparent);
+      border-bottom: 1px solid var(--brd);
+    }
+
+    .case-header h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin: 15px 0;
+      line-height: 1.1;
     }
 
     .gallery {
-      padding: 50px 8%;
-      max-width: 1100px;
+      padding: 80px 0;
+    }
+
+    .gallery-wrapper {
+      max-width: 1000px;
       margin: 0 auto;
       display: grid;
-      gap: 40px;
+      gap: 60px;
+      padding: 0 6%;
     }
 
     .gallery-item {
-      background: var(--surf);
-      padding: 25px;
-      border-radius: 15px;
+      background: var(--surf-card);
+      padding: 40px;
+      border-radius: 28px;
       border: 1px solid var(--brd);
+      transition: 0.4s ease;
+    }
+
+    .gallery-item:hover {
+      border-color: var(--prim);
+      transform: translateY(-5px);
+    }
+
+    .gallery-item h3 {
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      font-weight: 700;
     }
 
     .gallery-item img {
       width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
       margin-bottom: 25px;
+      display: block;
     }
 
     .code-block {
-      background: #1a1a1a;
-      color: #50fa7b;
-      padding: 25px;
-      border-radius: 10px;
-      font-family: monospace;
+      background: #05070a;
+      color: #10b981;
+      padding: 30px;
+      border-radius: 16px;
+      font-family: 'Courier New', Courier, monospace;
       overflow-x: auto;
+      border: 1px solid var(--brd);
       border-left: 4px solid var(--prim);
+      font-size: 1rem;
+    }
+
+    .code-block pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    /* Mobile Responsive Adjustments */
+    @media (max-width: 768px) {
+      .case-header {
+        padding: 140px 5% 50px;
+      }
+
+      .case-header h1 {
+        font-size: 2.2rem !important;
+      }
+
+      .gallery {
+        padding: 40px 0;
+      }
+
+      .gallery-wrapper {
+        gap: 30px;
+      }
+
+      .gallery-item {
+        padding: 25px;
+        border-radius: 20px;
+      }
+
+      .code-block {
+        padding: 20px;
+        font-size: 0.85rem;
+      }
+
+      .nav-actions .btn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <nav class="navbar">
-    <div class="logo"><a href="../../index.html"
-        style="text-decoration:none; color:inherit;">AR<span>.</span>Developer</a></div>
-    <a href="../../index.html" class="btn-small"><i class="fas fa-arrow-left"></i> Back to Main Portfolio</a>
+  <!-- Navbar -->
+  <nav class="navbar" data-aos="fade-down">
+    <div class="nav-container">
+      <div class="logo">AR<span>.</span>Dev</div>
+      <div class="nav-actions">
+        <a href="../../index.html" class="btn btn-secondary">
+          <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+      </div>
+    </div>
   </nav>
 
+  <!-- Header -->
   <header class="case-header">
-    <span class="badge">Shopify Case Study</span>
-    <h1 style="font-size: 2.5rem; margin-top: 15px;">Vintage Luxury Bags Store</h1>
-    <p style="color: var(--txt-sec);">Premium Theme Customization & bespoke Liquid sections.</p>
+    <div class="container">
+      <span class="status-pill" data-aos="fade-up">Shopify Case Study</span>
+      <h1 data-aos="fade-up" data-aos-delay="200">Vintage Luxury <br><span class="gradient-text">Bags Store</span></h1>
+      <p style="color: var(--txt-sec); max-width: 650px; margin: 20px auto 0; font-size: 1.1rem;" data-aos="fade-up"
+        data-aos-delay="400">
+        Premium Theme Customization & bespoke Liquid snippets for a high-end vintage brand identity.
+      </p>
+    </div>
   </header>
 
+  <!-- Gallery Section -->
   <section class="gallery">
-    <div class="gallery-item">
-      <h3>01. Hero & Branding</h3>
-      <p style="margin-bottom: 15px; color: var(--txt-sec);">Bespoke hero section with elegant typography.</p>
-      <img src="images/hero-section.png" alt="Hero">
-    </div>
+    <div class="gallery-wrapper">
 
-    <div class="gallery-item">
-      <h3>02. Collection Showcase</h3>
-      <p style="margin-bottom: 15px; color: var(--txt-sec);">Optimized mobile-responsive collection grid.</p>
-      <img src="images/collection-section.png" alt="Collection">
-    </div>
+      <!-- Item 01 -->
+      <div class="gallery-item" data-aos="fade-up">
+        <h3>01. Hero & Branding</h3>
+        <p style="margin-bottom: 25px; color: var(--txt-sec);">Custom-built hero section with optimized typography and
+          parallax-ready background images.</p>
+        <img src="images/hero-section.png" alt="Hero Section">
+      </div>
 
-    <div class="gallery-item">
-      <h3>03. Custom Liquid Snipet</h3>
-      <div class="code-block">
-        <pre>
+      <!-- Item 02 -->
+      <div class="gallery-item" data-aos="fade-up">
+        <h3>02. Collection Showcase</h3>
+        <p style="margin-bottom: 25px; color: var(--txt-sec);">Tailored collection grid focusing on product storytelling
+          and high-quality vintage feel.</p>
+        <img src="images/collection-section.png" alt="Collection Showcase">
+      </div>
+
+      <!-- Item 03 -->
+      <div class="gallery-item" data-aos="fade-up">
+        <h3>03. Custom Liquid Snippet</h3>
+        <p style="margin-bottom: 25px; color: var(--txt-sec);">Dynamic badge logic for 'Authentic Vintage' products
+          using Shopify Liquid logic.</p>
+        <div class="code-block">
+          <pre>
 {% if product.tags contains 'vintage' %}
   &lt;div class="badge"&gt;Authentic Vintage&lt;/div&gt;
-{% endif %}
-</pre>
+{% endif %}</pre>
+        </div>
       </div>
+
     </div>
   </section>
 
-  <footer style="text-align: center; padding: 50px;">
-    <p>&copy; 2026 Abdullah Al Rakib</p>
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 80px 0; border-top: 1px solid var(--brd);">
+    <div class="container">
+      <p style="color: var(--txt-sec); font-weight: 600;">&copy; 2026 Abdullah Al Rakib. Built for Shopify Excellence.
+      </p>
+    </div>
   </footer>
 
+  <!-- AOS Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init({duration: 1000});</script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      easing: 'ease-out-back'
+    });
+  </script>
 </body>
 
 </html>
