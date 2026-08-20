@@ -23,4 +23,4 @@ My goal is to help businesses scale their e-commerce brands by providing premium
 - **LinkedIn:** [Abdullah Al Rakib](https://www.linkedin.com/in/abdullah-al-rakib-fbd/)
 - **Fiverr:** [rakibdevbd](https://www.fiverr.com/rakibdevbd)
 - **Email:** [abdullahalrakib.fbd@gmail.com](mailto:abdullahalrakib.fbd@gmail.com)
-- **Download My CV:** [Click Here](./assets/Abdullah_Al_Rakib_Shopify_Developer_CV.pdf)
+- **Download My CV:** [Click Here](./assets/CV.pdf)
